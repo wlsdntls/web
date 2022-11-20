@@ -5,9 +5,9 @@
     <title></title>
       <link rel="stylesheet" type="text/css" href="http://localhost/web/style.css">
 </head>
-<body>
+<body id="target">
   <header>
-    <h1>JavaScript</h1>
+      <h1><a href = "http://localhost/web/html/index.html">JavaScript</a></h1>
   </header>
   <nav>
       <ol>
@@ -16,9 +16,24 @@
         <li><a href = "http://localhost/web/html/pr3.html">연산자</a></li>
       </ol>
   </nav>
+
+<div id="control">
+  <input type="button" value="white" onclick ="document.getElementById('target').className = 'white'"/>
+  <input type="button" value="black" onclick ="document.getElementById('target').className = 'black'"/>
+</div>
+
 <article>
-    <h2>변수와 상수란</h2>
-    변수는 바뀌는 값 상수는 고정 값
+    <h2>변수와 상수</h2>
+    변수
+    <ul>
+      <li>변하는 값</li>
+      <li> x = 10일 때 , x 오른쪽 항에 따라 변동가능</li>
+    </ul>
+    상수
+    <ul>
+      <li>변하지 않는 값</li>
+      <li> x = 10 일 때 , 10</li>
+    </ul>
 </article>
       </body>
 </html>
